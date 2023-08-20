@@ -1,13 +1,13 @@
-import FungibleToken from "../../contracts/FungibleToken.cdc"
-import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
-import FlowToken from "../../contracts/FlowToken.cdc"
-import Flovatar from "../../contracts/Flovatar.cdc"
-import FlovatarComponent from "../../contracts/FlovatarComponent.cdc"
-import FlovatarComponentTemplate from "../../contracts/FlovatarComponentTemplate.cdc"
-import FlovatarPack from "../../contracts/FlovatarPack.cdc"
-import FlovatarMarketplace from "../../contracts/FlovatarMarketplace.cdc"
-import FlovatarDustToken from "../../contracts/FlovatarDustToken.cdc"
-import FlovatarInbox from "../../contracts/FlovatarInbox.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "Flovatar"
+import "FlovatarComponent"
+import "FlovatarComponentTemplate"
+import "FlovatarPack"
+import "FlovatarMarketplace"
+import "FlovatarDustToken"
+import "FlovatarInbox"
 
 
 //this transaction will claim all content of the Inbox

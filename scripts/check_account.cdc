@@ -1,12 +1,12 @@
-import FungibleToken from "../contracts/FungibleToken.cdc"
-import NonFungibleToken from "../contracts/NonFungibleToken.cdc"
-import FlowToken from "../contracts/FlowToken.cdc"
-import Flovatar from "../contracts/Flovatar.cdc"
-import FlovatarComponent from "../contracts/FlovatarComponent.cdc"
-import FlovatarComponentTemplate from "../contracts/FlovatarComponentTemplate.cdc"
-import FlovatarPack from "../contracts/FlovatarPack.cdc"
-import FlovatarMarketplace from "../contracts/FlovatarMarketplace.cdc"
-import MetadataViews from "../contracts/MetadataViews.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "Flovatar"
+import "FlovatarComponent"
+import "FlovatarComponentTemplate"
+import "FlovatarPack"
+import "FlovatarMarketplace"
+import "MetadataViews"
 
 
 pub fun main(address: Address): Bool {

@@ -1,4 +1,4 @@
-import FlovatarInbox from "../contracts/FlovatarInbox.cdc"
+import "FlovatarInbox"
 
 pub fun main() : UFix64 {
 

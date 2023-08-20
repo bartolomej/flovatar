@@ -1,12 +1,23 @@
 const fs = require("fs");
 const path = require("path");
 
-const contractsDirPath = "./contracts"
-const contractFileNames = fs.readdirSync(contractsDirPath);
+const contractsDirPath = process.argv[2];
 
-for (const fileName of contractFileNames) {
-    console.log(`Migrating ${fileName}`)
-    migrateContractSource(path.join(contractsDirPath, fileName))
+migrateFromRootDir(contractsDirPath)
+
+function migrateFromRootDir(rootDirPath) {
+    console.log(`Migrating imports in dir: ${rootDirPath}`)
+    const fileOrDirNames = fs.readdirSync(rootDirPath);
+
+    for (const fileOrDirName of fileOrDirNames) {
+        const fileOrDirPath = path.join(rootDirPath, fileOrDirName);
+        if (fs.statSync(fileOrDirPath).isFile()) {
+            console.log(`Migrating ${fileOrDirName}`)
+            migrateContractSource(fileOrDirPath)
+        } else {
+            migrateFromRootDir(fileOrDirPath)
+        }
+    }
 }
 
 function migrateContractSource(filePath) {

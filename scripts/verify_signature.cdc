@@ -1,4 +1,4 @@
-import Crypto
+import "Crypto"
 
 pub fun main(
   address: Address,
