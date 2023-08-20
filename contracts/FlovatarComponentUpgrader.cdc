@@ -1,20 +1,12 @@
-//import FungibleToken from 0xf233dcee88fe0abe
-//import NonFungibleToken from 0x1d7e57aa55817448
-//import FlowToken from 0x1654653399040a61
-//import FlovatarComponentTemplate from 0x921ea449dffec68a
-//import FlovatarComponent from 0x921ea449dffec68a
-//import FlovatarPack from 0x921ea449dffec68a
-//import FlovatarDustToken from 0x921ea449dffec68a
-//import Flovatar from 0x921ea449dffec68a
-import FungibleToken from "./FungibleToken.cdc"
-import NonFungibleToken from "./NonFungibleToken.cdc"
-import FlowToken from "./FlowToken.cdc"
-import FlovatarComponentTemplate from "./FlovatarComponentTemplate.cdc"
-import FlovatarComponent from "./FlovatarComponent.cdc"
-import FlovatarPack from "./FlovatarPack.cdc"
-import FlovatarDustToken from "./FlovatarDustToken.cdc"
-import FlovatarInbox from "./FlovatarInbox.cdc"
-import Flovatar from "./Flovatar.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "FlovatarComponentTemplate"
+import "FlovatarComponent"
+import "FlovatarPack"
+import "FlovatarDustToken"
+import "FlovatarInbox"
+import "Flovatar"
 
 /*
 

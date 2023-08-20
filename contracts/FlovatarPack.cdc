@@ -1,17 +1,10 @@
-//import FungibleToken from 0xf233dcee88fe0abe
-//import NonFungibleToken from 0x1d7e57aa55817448
-//import FlowToken from 0x1654653399040a61
-//import FlovatarComponentTemplate from 0x921ea449dffec68a
-//import FlovatarComponent from 0x921ea449dffec68a
-//import Crypto
-//import FlowUtilityToken from 0xead892083b3e2c6c
-import FungibleToken from "./FungibleToken.cdc"
-import NonFungibleToken from "./NonFungibleToken.cdc"
-import FlowToken from "./FlowToken.cdc"
-import FlovatarComponentTemplate from "./FlovatarComponentTemplate.cdc"
-import FlovatarComponent from "./FlovatarComponent.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "FlovatarComponentTemplate"
+import "FlovatarComponent"
+import "FlowUtilityToken"
 import Crypto
-import FlowUtilityToken from "./FlowUtilityToken.cdc"
 
 /*
 

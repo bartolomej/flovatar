@@ -1,14 +1,9 @@
-//import FungibleToken from 0xf233dcee88fe0abe
-//import NonFungibleToken from 0x1d7e57aa55817448
-//import FlowToken from 0x1654653399040a61
-//import FlovatarDustCollectibleTemplate from 0x921ea449dffec68a
-//import MetadataViews from 0x1d7e57aa55817448
-import FungibleToken from "./FungibleToken.cdc"
-import NonFungibleToken from "./NonFungibleToken.cdc"
-import FlowToken from "./FlowToken.cdc"
-import FlovatarDustCollectibleTemplate from "./FlovatarDustCollectibleTemplate.cdc"
-import MetadataViews from "./MetadataViews.cdc"
-import FlovatarDustToken from "./FlovatarDustToken.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "FlovatarDustCollectibleTemplate"
+import "MetadataViews"
+import "FlovatarDustToken"
 
 /*
 

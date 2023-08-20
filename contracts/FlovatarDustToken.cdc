@@ -1,5 +1,4 @@
-//import FungibleToken from 0xf233dcee88fe0abe
-import FungibleToken from "./FungibleToken.cdc"
+import "FungibleToken"
 
 pub contract FlovatarDustToken: FungibleToken {
 

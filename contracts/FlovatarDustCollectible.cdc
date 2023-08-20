@@ -1,16 +1,10 @@
-//import FungibleToken from 0xf233dcee88fe0abe
-//import NonFungibleToken from 0x1d7e57aa55817448
-//import FlowToken from 0x1654653399040a61
-//import FlovatarDustCollectibleTemplate from 0x921ea449dffec68a
-//import MetadataViews from 0x1d7e57aa55817448
-//import FlovatarDustToken from 0x921ea449dffec68a
-import FungibleToken from "./FungibleToken.cdc"
-import NonFungibleToken from "./NonFungibleToken.cdc"
-import FlowToken from "./FlowToken.cdc"
-import FlovatarDustCollectibleTemplate from "./FlovatarDustCollectibleTemplate.cdc"
-import FlovatarDustCollectibleAccessory from "./FlovatarDustCollectibleAccessory.cdc"
-import MetadataViews from "./MetadataViews.cdc"
-import FlovatarDustToken from "./FlovatarDustToken.cdc"
+import "FungibleToken"
+import "NonFungibleToken"
+import "FlowToken"
+import "FlovatarDustCollectibleTemplate"
+import "FlovatarDustCollectibleAccessory"
+import "MetadataViews"
+import "FlovatarDustToken"
 
 /*
 
@@ -384,8 +378,8 @@ pub contract FlovatarDustCollectible: NonFungibleToken {
 
             if type ==  Type<MetadataViews.Editions>() {
                 let series = self.getSeries()
-                let maxMint = series!.maxMintable
-                if(maxMint == UInt32(0)){
+                var maxMint = series!.maxMintable
+                if(maxMint == UInt64(0)){
                     maxMint = 9999999
                 }
                 let editionInfo = MetadataViews.Edition(name: "Flovatar Stardust Collectible Series ".concat(self.series.toString()), number: self.mint, max: maxMint)
